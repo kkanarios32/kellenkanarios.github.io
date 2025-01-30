@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>943</fr:anchor><fr:addr
+type="user">kak-002J</fr:addr><fr:route>kak-002J.xml</fr:route><fr:title
+text="Operating Systems: Three Easy Pieces Notes">Operating Systems: Three Easy Pieces Notes</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>5</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter>
+  
+    <fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>815</fr:anchor><fr:addr
+type="machine">#294</fr:addr><fr:route>unstable-294.xml</fr:route><fr:title
+text="Virtual Memory">Virtual Memory</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>5</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter>
+  In my foray into C programming, I have become thoroughly confused with virtual memory and the like. Mainly, what is malloc really doing? In the minimap2 library, they implement essentially their own memory management on top of malloc. The reason for this is what had me confused. I think the following summarizes my findings:
+  <fr:ul><fr:li>When a process is started by the OS, it allocates virtual address space for the process.</fr:li>
+    <fr:li>Within this virtual address space, malloc allocates memory on the heap. Namely, just returning a pointer (technically virtual address) to a block of memory of the desired size.</fr:li>
+    <fr:ul><fr:li>Essentially, they have implemented additional memory management to reduce <fr:strong>intra-page</fr:strong> fragmentation.</fr:li></fr:ul></fr:ul>
+</fr:mainmatter><fr:backmatter /></fr:tree>
+  
+</fr:mainmatter><fr:backmatter /></fr:tree>

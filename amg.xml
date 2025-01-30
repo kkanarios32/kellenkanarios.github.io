@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>389</fr:anchor><fr:addr
+type="user">amg</fr:addr><fr:route>amg.xml</fr:route><fr:title
+text="Parallel Algebraic Multigrid for Higher Order PDEs">Parallel Algebraic Multigrid for Higher Order PDEs</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2023</fr:year><fr:month>8</fr:month><fr:day>20</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors><fr:meta
+name="external">slides/amg_slides.pdf</fr:meta><fr:meta
+name="external">posters/amg_poster.pptx</fr:meta><fr:meta
+name="doi">https://www.osti.gov/servlets/purl/2205732/</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree>

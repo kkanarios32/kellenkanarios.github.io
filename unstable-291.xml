@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>447</fr:anchor><fr:addr
+type="machine">#291</fr:addr><fr:route>unstable-291.xml</fr:route><fr:title
+text="Contrastive Safe RL › Daily Tracker › Year 2025 › January, 2025"><fr:link
+type="local"
+href="unstable-290.xml"
+addr="#290"
+title="Contrastive Safe RL › Daily Tracker › Year 2025"><fr:link
+type="local"
+href="unstable-289.xml"
+addr="#289"
+title="Contrastive Safe RL › Daily Tracker"><fr:link
+type="local"
+href="kak-002V.xml"
+addr="kak-002V"
+title="Contrastive Safe RL">Contrastive Safe RL</fr:link> › Daily Tracker</fr:link> › Year 2025</fr:link> › January, 2025</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>414</fr:anchor><fr:addr
+type="machine">#292</fr:addr><fr:route>unstable-292.xml</fr:route><fr:title
+text="01-22-25">01-22-25</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><html:div
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="markdownit grace-loading">
+        <fr:strong>Brax Notes</fr:strong>
+        <fr:p><fr:ul><fr:li>Brax state has <fr:tex
+display="inline"><![CDATA[q]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[q_d]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[x_d]]></fr:tex></fr:li>
+                <fr:ul><fr:li>We care about <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>, which is a <fr:link
+type="external"
+href="https://github.com/google/brax/blob/d48b0b373a6478838eac325cadc6d8983837a968/brax/base.py#L171">transform</fr:link> that has attributes [<fr:code>pos</fr:code>, <fr:code>rot</fr:code>] that store [cartesian, quaternion] respectively.</fr:li>
+                    <fr:li>Axis 0 is the different objects defined by the xml file.</fr:li>
+                    <fr:li>We added target and obstacle as objects in the xml file (super hacky).</fr:li></fr:ul>
+                  <fr:li>Specify <fr:code>init_qpos</fr:code> in xml file, which Brax then uses kinematics to translate to absolute position and fills <fr:code>x.pos</fr:code>. This is why we only have to set <fr:code>q</fr:code> <fr:link
+type="external"
+href="https://github.com/MichalBortkiewicz/JaxGCRL/blob/b54cd4cdc968a365f9113fed1822e7e774a113e9/envs/ant.py#L90">here</fr:link> and reference <fr:code>x.pos</fr:code> later.</fr:li></fr:ul></fr:p>
+      </html:div></fr:mainmatter><fr:backmatter /></fr:tree>
+<fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>416</fr:anchor><fr:addr
+type="machine">#293</fr:addr><fr:route>unstable-293.xml</fr:route><fr:title
+text="01-27-25">01-27-25</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><html:div
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="markdownit grace-loading">
+        From this <fr:link
+type="external"
+href="https://arxiv.org/pdf/1911.09101">paper</fr:link>, it seems like maybe linear combination is fine? Instead we want dual descent on lambda? Maximizing the <fr:tex
+display="inline"><![CDATA[Q - \lambda  Q]]></fr:tex> is the same as the policy from their modified reward. Since our constraints / goal are not fixed, I was thinking of neural network approximate of lambda as a function of goal and constraint. Since the trajectories are technically off policy, might need to do something about (state, action) also?
+        Want to solve constrained optimization problem.
+        <fr:tex
+display="block"><![CDATA[         \begin {align*} \pi _{\phi }(s, a, g, g') = &\max _{\theta } Q_{\theta }(s, a, g) \\ &\text {s.t.} \quad  Q_{\theta }(s, a, g') \leq  0         \end {align*}         ]]></fr:tex>
+        Since in <fr:link
+type="local"
+href="eysenbach2023.xml"
+addr="eysenbach2023"
+title="Constrastive Learning as Goal Conditioned Reinforcement Learning">Constrastive Learning as Goal Conditioned Reinforcement Learning</fr:link> they get away with "off-policy" <fr:tex
+display="inline"><![CDATA[Q]]></fr:tex> function for DDPG, I think it is good enough to start with <fr:tex
+display="inline"><![CDATA[\lambda _{\phi }(g, g')]]></fr:tex>.
+      </html:div></fr:mainmatter><fr:backmatter /></fr:tree>
+</fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>449</fr:anchor><fr:addr
+type="user">kak-002V</fr:addr><fr:route>kak-002V.xml</fr:route><fr:title
+text="Contrastive Safe RL">Contrastive Safe RL</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>399</fr:anchor><fr:addr
+type="machine">#287</fr:addr><fr:route>unstable-287.xml</fr:route><fr:title
+text="Useful Resources">Useful Resources</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:ul><fr:li><fr:link
+type="external"
+href="https://github.com/MichalBortkiewicz/JaxGCRL">Accelerating Goal-Conditioned RL</fr:link></fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>401</fr:anchor><fr:addr
+type="machine">#288</fr:addr><fr:route>unstable-288.xml</fr:route><fr:title
+text="Related Work">Related Work</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>403</fr:anchor><fr:addr
+type="user">eysenbach2023</fr:addr><fr:route>eysenbach2023.xml</fr:route><fr:title
+text="Constrastive Learning as Goal Conditioned Reinforcement Learning">Constrastive Learning as Goal Conditioned Reinforcement Learning</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
+name="abstract">
+In reinforcement learning (RL), it is easier to solve a task if
+              given a good representation. While deep RL should automatically
+              acquire such good representations, prior work often finds that
+              learning representations in an end-to-end fashion is unstable and
+              instead equip RL algorithms with additional representation learning
+              parts (e.g., auxiliary losses, data augmentation). How can we
+              design RL algorithms that directly acquire good representations? In
+              this paper, instead of adding representation learning parts to an
+              existing RL algorithm, we show (contrastive) representation
+              learning methods can be cast as RL algorithms in their own right.
+              To do this, we build upon prior work and apply contrastive
+              representation learning to action-labeled trajectories, in such a
+              way that the (inner product of) learned representations exactly
+              corresponds to a goal-conditioned value function. We use this idea
+              to reinterpret a prior RL method as performing contrastive learning
+              , and then use the idea to propose a much simpler method that
+              achieves similar performance. Across a range of goal-conditioned RL
+              tasks, we demonstrate that contrastive RL methods achieve higher
+              success rates than prior non-contrastive methods, including in the
+              offline RL setting. We also show that contrastive RL outperforms
+              prior methods on image-based tasks, without using data augmentation
+              or auxiliary objectives.
+  </fr:meta><fr:meta
+name="doi">10.48550/arXiv.2206.07568</fr:meta><fr:meta
+name="bibtex"><![CDATA[@misc{eysenbachContrastiveLearningGoalConditioned2023,
+  title = {Contrastive {{Learning}} as {{Goal-Conditioned Reinforcement Learning
+           }}},
+  author = {Eysenbach, Benjamin and Zhang, Tianjun and Salakhutdinov, Ruslan and
+            Levine, Sergey},
+  year = {2023},
+  month = feb,
+  number = {arXiv:2206.07568},
+  eprint = {2206.07568},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  urldate = {2024-09-06},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science -
+              Machine Learning},
+  file = {/home/kellen/Zotero/storage/WVQKIMN4/Eysenbach et al. - 2023 -
+          Contrastive Learning as Goal-Conditioned Reinforcement Learning.pdf},
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>404</fr:anchor><fr:addr
+type="user">vandenOord2018</fr:addr><fr:route>vandenOord2018.xml</fr:route><fr:title
+text="Contrastive Predictive Decoding">Contrastive Predictive Decoding</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
+name="doi">10.48550/arXiv.1807.03748</fr:meta><fr:meta
+name="bibtex"><![CDATA[@misc{oord2019representationlearningcontrastivepredictive,
+      title={Representation Learning with Contrastive Predictive Coding}, 
+      author={Aaron van den Oord and Yazhe Li and Oriol Vinyals},
+      year={2019},
+      eprint={1807.03748},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/1807.03748}, 
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>405</fr:anchor><fr:addr
+type="user">zheng2024</fr:addr><fr:route>zheng2024.xml</fr:route><fr:title
+text="Contrastive Difference Predictive Coding">Contrastive Difference Predictive Coding</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
+name="bibtex"><![CDATA[@misc{zheng2024contrastivedifferencepredictivecoding,
+      title={Contrastive Difference Predictive Coding}, 
+      author={Chongyi Zheng and Ruslan Salakhutdinov and Benjamin Eysenbach},
+      year={2024},
+      eprint={2310.20141},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2310.20141}, 
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>406</fr:anchor><fr:addr
+type="user">nachum2019</fr:addr><fr:route>nachum2019.xml</fr:route><fr:title
+text="Near Optimal Representation Learning for Hierarchical Reinforcement Learning">Near Optimal Representation Learning for Hierarchical Reinforcement Learning</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
+name="bibtex"><![CDATA[@misc{nachum2019nearoptimalrepresentationlearninghierarchical,
+      title={Near-Optimal Representation Learning for Hierarchical Reinforcement Learning}, 
+      author={Ofir Nachum and Shixiang Gu and Honglak Lee and Sergey Levine},
+      year={2019},
+      eprint={1810.01257},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/1810.01257}, 
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>407</fr:anchor><fr:addr
+type="user">gutmann2012</fr:addr><fr:route>gutmann2012.xml</fr:route><fr:title
+text="Noise-contrastive Estimation">Noise-contrastive Estimation</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
+name="abstract">We present a new estimation principle for parameterized statistical models. The idea is to perform nonlinear logistic regression to discriminate between the observed data and some artificially generated noise, using the model log-density function in the regression nonlinearity.  We show that this leads to a consistent (convergent) estimator of the parameters, and analyze the asymptotic variance.  In particular, the method is shown to directly work for unnormalized models, i.e. models where the density function does not integrate to one. The normalization constant can be estimated just like any other parameter. For a tractable ICA model, we compare the method with other estimation methods that can be used to learn unnormalized models, including score matching, contrastive divergence, and maximum-likelihood where the normalization constant is estimated with importance sampling. Simulations show that noise-contrastive estimation offers the best trade-off between computational and statistical efficiency. The method is then applied to the modeling of natural images: We show that the method can successfully estimate a large-scale two-layer model and a Markov random field.</fr:meta><fr:meta
+name="bibtex"><![CDATA[@InProceedings{pmlr-v9-gutmann10a,
+  title = 	 {Noise-contrastive estimation: A new estimation principle for unnormalized statistical models},
+  author = 	 {Gutmann, Michael and Hyvärinen, Aapo},
+  booktitle = 	 {Proceedings of the Thirteenth International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {297--304},
+  year = 	 {2010},
+  editor = 	 {Teh, Yee Whye and Titterington, Mike},
+  volume = 	 {9},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Chia Laguna Resort, Sardinia, Italy},
+  month = 	 {13--15 May},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v9/gutmann10a/gutmann10a.pdf},
+  url = 	 {https://proceedings.mlr.press/v9/gutmann10a.html},
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>408</fr:anchor><fr:addr
+type="machine">#289</fr:addr><fr:route>unstable-289.xml</fr:route><fr:title
+text="Daily Tracker">Daily Tracker</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>410</fr:anchor><fr:addr
+type="machine">#290</fr:addr><fr:route>unstable-290.xml</fr:route><fr:title
+text="Year 2025">Year 2025</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>412</fr:anchor><fr:addr
+type="machine">#291</fr:addr><fr:route>unstable-291.xml</fr:route><fr:title
+text="January, 2025">January, 2025</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>414</fr:anchor><fr:addr
+type="machine">#292</fr:addr><fr:route>unstable-292.xml</fr:route><fr:title
+text="01-22-25">01-22-25</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><html:div
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="markdownit grace-loading">
+        <fr:strong>Brax Notes</fr:strong>
+        <fr:p><fr:ul><fr:li>Brax state has <fr:tex
+display="inline"><![CDATA[q]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[q_d]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[x_d]]></fr:tex></fr:li>
+                <fr:ul><fr:li>We care about <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>, which is a <fr:link
+type="external"
+href="https://github.com/google/brax/blob/d48b0b373a6478838eac325cadc6d8983837a968/brax/base.py#L171">transform</fr:link> that has attributes [<fr:code>pos</fr:code>, <fr:code>rot</fr:code>] that store [cartesian, quaternion] respectively.</fr:li>
+                    <fr:li>Axis 0 is the different objects defined by the xml file.</fr:li>
+                    <fr:li>We added target and obstacle as objects in the xml file (super hacky).</fr:li></fr:ul>
+                  <fr:li>Specify <fr:code>init_qpos</fr:code> in xml file, which Brax then uses kinematics to translate to absolute position and fills <fr:code>x.pos</fr:code>. This is why we only have to set <fr:code>q</fr:code> <fr:link
+type="external"
+href="https://github.com/MichalBortkiewicz/JaxGCRL/blob/b54cd4cdc968a365f9113fed1822e7e774a113e9/envs/ant.py#L90">here</fr:link> and reference <fr:code>x.pos</fr:code> later.</fr:li></fr:ul></fr:p>
+      </html:div></fr:mainmatter><fr:backmatter /></fr:tree>
+<fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>416</fr:anchor><fr:addr
+type="machine">#293</fr:addr><fr:route>unstable-293.xml</fr:route><fr:title
+text="01-27-25">01-27-25</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><html:div
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="markdownit grace-loading">
+        From this <fr:link
+type="external"
+href="https://arxiv.org/pdf/1911.09101">paper</fr:link>, it seems like maybe linear combination is fine? Instead we want dual descent on lambda? Maximizing the <fr:tex
+display="inline"><![CDATA[Q - \lambda  Q]]></fr:tex> is the same as the policy from their modified reward. Since our constraints / goal are not fixed, I was thinking of neural network approximate of lambda as a function of goal and constraint. Since the trajectories are technically off policy, might need to do something about (state, action) also?
+        Want to solve constrained optimization problem.
+        <fr:tex
+display="block"><![CDATA[         \begin {align*} \pi _{\phi }(s, a, g, g') = &\max _{\theta } Q_{\theta }(s, a, g) \\ &\text {s.t.} \quad  Q_{\theta }(s, a, g') \leq  0         \end {align*}         ]]></fr:tex>
+        Since in <fr:link
+type="local"
+href="eysenbach2023.xml"
+addr="eysenbach2023"
+title="Constrastive Learning as Goal Conditioned Reinforcement Learning">Constrastive Learning as Goal Conditioned Reinforcement Learning</fr:link> they get away with "off-policy" <fr:tex
+display="inline"><![CDATA[Q]]></fr:tex> function for DDPG, I think it is good enough to start with <fr:tex
+display="inline"><![CDATA[\lambda _{\phi }(g, g')]]></fr:tex>.
+      </html:div></fr:mainmatter><fr:backmatter /></fr:tree>
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

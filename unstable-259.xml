@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>362</fr:anchor><fr:addr
+type="machine">#259</fr:addr><fr:route>unstable-259.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter>
+    lol.
+    </fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>364</fr:anchor><fr:addr
+type="user">kak-003T</fr:addr><fr:route>kak-003T.xml</fr:route><fr:title
+text="Accelerating Minimap2">Accelerating Minimap2</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>366</fr:anchor><fr:addr
+type="machine">#257</fr:addr><fr:route>unstable-257.xml</fr:route><fr:title
+text="Useful Resources">Useful Resources</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:ul><fr:li><fr:link
+type="external"
+href="https://github.com/Minimap2onGPU/mm2-gb">minimap2-gb</fr:link></fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>368</fr:anchor><fr:addr
+type="machine">#258</fr:addr><fr:route>unstable-258.xml</fr:route><fr:title
+text="Related Work">Related Work</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>370</fr:anchor><fr:addr
+type="user">dongMm2gbGPUAccelerated2024</fr:addr><fr:route>dongMm2gbGPUAccelerated2024.xml</fr:route><fr:title
+text="Mm2-gb: GPU Accelerated Minimap2 for Long Read DNA Mapping">Mm2-gb: GPU Accelerated Minimap2 for Long Read DNA Mapping</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>3</fr:month></fr:date><fr:authors><fr:author>Juechu Dong</fr:author><fr:author>Xueshen Liu</fr:author><fr:author>Harisankar Sadasivan</fr:author><fr:author>Sriranjani Sitaraman</fr:author><fr:author>Satish Narayanasamy</fr:author></fr:authors><fr:meta
+name="doi">10.1101/2024.03.23.586366</fr:meta><fr:meta
+name="bibtex"><![CDATA[@misc{dongMm2gbGPUAccelerated2024,
+ title = {Mm2-Gb: {{GPU Accelerated Minimap2}} for {{Long Read DNA Mapping}}},
+ author = {Dong, Juechu and Liu, Xueshen and Sadasivan, Harisankar and Sitaraman, Sriranjani and Narayanasamy, Satish},
+ year = {2024},
+ doi = {10.1101/2024.03.23.586366},
+ urldate = {2024-12-11},
+ file = {/home/kellen/Zotero/storage/3PUF5B6Y/Dong et al. - 2024 - mm2-gb GPU Accelerated Minimap2 for Long Read DNA.pdf},
+ langid = {english},
+ copyright = {http://creativecommons.org/licenses/by-nc/4.0/},
+ abstract = {Long-read DNA sequencing is becoming increasingly popular for genetic diagnostics. Minimap2 is the state-of-the-art long-read aligner. However, Minimap2's chaining step is slow on the CPU and takes 40-68\% of the time especially for long DNA reads. Prior works in accelerating Minimap2 either lose mapping accuracy, are closed source (and not updated) or deliver inconsistent speedups for longer reads. We introduce mm2-gb which accelerates the chaining step of Minimap2 on GPU without compromising mapping accuracy. In addition to intra- and inter-read parallelism exploited by prior works, mm2-gb exploits finer levels of parallelism by breaking down high latency large workloads into smaller independent segments that can be run in parallel and leverages several strategies for better workload balancing including split-kernels and prioritized scheduling of segments based on sorted size. We show that mm2-gb on an AMD Instinct™ MI210 GPU achieves 2.57-5.33x performance improvement on long nanopore reads (10kb-100kb), and 1.87x performance gain on super long reads (100kb-300kb) compared to SIMD accelerated mm2-fast. mm2-gb is open-sourced and available at https://github.com/Minimap2onGPU/minimap2.},
+ month = {March},
+ shorttitle = {Mm2-Gb}
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>376</fr:anchor><fr:addr
+type="user">kalikarAcceleratingLongreadAnalysis2021</fr:addr><fr:route>kalikarAcceleratingLongreadAnalysis2021.xml</fr:route><fr:title
+text="Accelerating long-read analysis on modern CPUs">Accelerating long-read analysis on modern CPUs</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2021</fr:year><fr:month>7</fr:month></fr:date><fr:authors><fr:author>Saurabh Kalikar</fr:author><fr:author>Chirag Jain</fr:author><fr:author>Vasimuddin Md</fr:author><fr:author>Sanchit Misra</fr:author></fr:authors><fr:meta
+name="doi">10.1101/2021.07.21.453294</fr:meta><fr:meta
+name="bibtex"><![CDATA[@misc{kalikarAcceleratingLongreadAnalysis2021,
+ title = {Accelerating Long-Read Analysis on Modern {{CPUs}}},
+ author = {Kalikar, Saurabh and Jain, Chirag and Md, Vasimuddin and Misra, Sanchit},
+ year = {2021},
+ doi = {10.1101/2021.07.21.453294},
+ urldate = {2024-12-11},
+ file = {/home/kellen/Zotero/storage/FIX8U6F5/Kalikar et al. - 2021 - Accelerating long-read analysis on modern CPUs.pdf},
+ langid = {english},
+ abstract = {Long read sequencing is now routinely used at scale for genomics and transcriptomics applications. Mapping of long reads or a draft genome assembly to a reference sequence is often one of the most time consuming steps in these applications. Here, we present techniques to accelerate minimap2, a widely used software for mapping. We present multiple optimizations using SIMD parallelization, e cient cache utilization and a learned index data structure to accelerate its three main computational modules, i.e., seeding, chaining and pairwise sequence alignment. These result in reduction of end-to-end mapping time of minimap2 by up to 1.8{#{\RightArrowBar}} while maintaining identical output.},
+ month = {July}
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>381</fr:anchor><fr:addr
+type="user">liMinimap2PairwiseAlignment2018</fr:addr><fr:route>liMinimap2PairwiseAlignment2018.xml</fr:route><fr:title
+text="Minimap2: Pairwise alignment for nucleotide sequences">Minimap2: Pairwise alignment for nucleotide sequences</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2018</fr:year><fr:month>9</fr:month></fr:date><fr:authors><fr:author>Heng Li</fr:author></fr:authors><fr:meta
+name="doi">10.1093/bioinformatics/bty191</fr:meta><fr:meta
+name="bibtex"><![CDATA[@article{liMinimap2PairwiseAlignment2018,
+ title = {Minimap2: Pairwise Alignment for Nucleotide Sequences},
+ author = {Li, Heng},
+ year = {2018},
+ doi = {10.1093/bioinformatics/bty191},
+ urldate = {2024-12-11},
+ journal = {Bioinformatics},
+ editor = {Birol, Inanc},
+ volume = {34},
+ number = {18},
+ pages = {3094--3100},
+ file = {/home/kellen/Zotero/storage/U4V4YFWK/Li - 2018 - Minimap2 pairwise alignment for nucleotide sequen.pdf},
+ langid = {english},
+ copyright = {https://academic.oup.com/journals/pages/open\_access/funder\_policies/chorus/standard\_publication\_model},
+ abstract = {Motivation: Recent advances in sequencing technologies promise ultra-long reads of \$100 kb in average, full-length mRNA or cDNA reads in high throughput and genomic contigs over 100 Mb in length. Existing alignment programs are unable or inefficient to process such data at scale, which presses for the development of new alignment algorithms.},
+ issn = {1367-4803, 1367-4811},
+ month = {September},
+ shorttitle = {Minimap2}
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree>
+  
+    <fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>383</fr:anchor><fr:addr
+type="machine">#260</fr:addr><fr:route>unstable-260.xml</fr:route><fr:title
+text="Data structure">Data structure</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter>
+  <fr:ul><fr:li>A <fr:em>query</fr:em> is a genome sequence we are trying to align to a <fr:em>reference</fr:em> genome sequence</fr:li>
+    <fr:li>An <fr:em>anchor</fr:em> is a 3-tuple <fr:tex
+display="inline"><![CDATA[(x,y,w)]]></fr:tex>, indicating interval <fr:tex
+display="inline"><![CDATA[[x-w+1,x]]]></fr:tex> on the reference matching interval <fr:tex
+display="inline"><![CDATA[[y-w+1,y]]]></fr:tex> on the query.</fr:li>
+    <fr:li>A <fr:em>chain</fr:em> is a sequence of <fr:em>anchors</fr:em> chosen iteratively by 
+    <fr:tex
+display="block"><![CDATA[\operatorname {argmax}_{j}\{f(j)+x(j,i)-\beta (j,i)\}]]></fr:tex></fr:li></fr:ul>
+  
+    <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>385</fr:anchor><fr:addr
+type="machine">#259</fr:addr><fr:route>unstable-259.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter>
+    lol.
+    </fr:mainmatter><fr:backmatter /></fr:tree>
+
+</fr:mainmatter><fr:backmatter /></fr:tree>
+  
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>387</fr:anchor><fr:addr
+type="machine">#261</fr:addr><fr:route>unstable-261.xml</fr:route><fr:title
+text="Daily Tracker">Daily Tracker</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>389</fr:anchor><fr:addr
+type="machine">#262</fr:addr><fr:route>unstable-262.xml</fr:route><fr:title
+text="Year 2025">Year 2025</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>391</fr:anchor><fr:addr
+type="machine">#263</fr:addr><fr:route>unstable-263.xml</fr:route><fr:title
+text="January, 2025">January, 2025</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>393</fr:anchor><fr:addr
+type="machine">#264</fr:addr><fr:route>unstable-264.xml</fr:route><fr:title
+text="01-28-25">01-28-25</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><html:div
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="markdownit grace-loading">
+        Unraveling where the backtracking kernel is called:
+        <fr:ul><fr:li><fr:code>init_stream_gpu</fr:code> calls the <fr:code>plmem</fr:code> functions that initialize the CUDA streams.</fr:li>
+          <fr:ul><fr:li>Called in <fr:code>main.c</fr:code></fr:li></fr:ul>
+          <fr:li>GPU chaining is started by <fr:code>chain_stream_gpu</fr:code></fr:li></fr:ul>
+      <fr:strong>TODO:</fr:strong>
+      <fr:ul><fr:li><fr:strong>Short term</fr:strong>
+      <fr:ul><fr:li>Need to take u, z as input via devicePtr (need to modify devicePtr)</fr:li>
+        <fr:li>Pre-allocate device memory for u,z</fr:li>
+        <fr:li>Port km, f, p to devicePtr counterpart</fr:li>
+        <fr:li>Probably need to add n_u, n_v to devicePtr too?</fr:li></fr:ul></fr:li>
+      <fr:li><fr:strong>Medium term</fr:strong>
+        <fr:ul><fr:li>radix_sort kernel</fr:li></fr:ul></fr:li>
+      <fr:li><fr:strong>Questions</fr:strong>
+        <fr:ul><fr:li>How to cudaStreams?</fr:li></fr:ul></fr:li></fr:ul>
+    </html:div></fr:mainmatter><fr:backmatter /></fr:tree>
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

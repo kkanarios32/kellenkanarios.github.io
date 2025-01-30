@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1586</fr:anchor><fr:addr
+type="machine">#244</fr:addr><fr:route>unstable-244.xml</fr:route><fr:title
+text="Disk › Papers of a Week"><fr:link
+type="local"
+href="kak-0004.xml"
+addr="kak-0004"
+title="Disk">Disk</fr:link> › Papers of a Week</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>29</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>I am committing to reading (fairly rigorously) one paper a week. Here I will accumulate my notes and thoughts on each of these papers as I go.</fr:p><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1212</fr:anchor><fr:addr
+type="user">mcleod2022</fr:addr><fr:route>mcleod2022.xml</fr:route><fr:title
+text="Continual Auxiliary Task Learning">Continual Auxiliary Task Learning</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
+name="abstract">
+  Learning auxiliary tasks, such as multiple predictions about the world, can provide many benefits to reinforcement learning systems. A variety of off-policy learning algorithms have been developed to learn such predictions, but as yet there is little work on how to adapt the behavior to gather useful data for those off-policy predictions. In this work, we investigate a reinforcement learning system designed to learn a collection of auxiliary tasks, with a behavior policy learning to take actions to improve those auxiliary predictions. We highlight the inherent non-stationarity in this continual auxiliary task learning problem, for both prediction learners and the behavior learner. We develop an algorithm based on successor features that facilitates tracking under non-stationary rewards, and prove the separation into learning successor features and rewards provides convergence rate improvements. We conduct an in-depth study into the resulting multi-prediction learning system. 
+  </fr:meta><fr:meta
+name="doi">10.48550/arXiv.2202.11133</fr:meta><fr:meta
+name="bibtex"><![CDATA[@misc{mcleod2022continualauxiliarytasklearning,
+      title={Continual Auxiliary Task Learning}, 
+      author={Matthew McLeod and Chunlok Lo and Matthew Schlegel and Andrew Jacobsen and Raksha Kumaraswamy and Martha White and Adam White},
+      year={2022},
+      eprint={2202.11133},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2202.11133}, 
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1213</fr:anchor><fr:addr
+type="user">zheng2024</fr:addr><fr:route>zheng2024.xml</fr:route><fr:title
+text="Contrastive Difference Predictive Coding">Contrastive Difference Predictive Coding</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
+name="bibtex"><![CDATA[@misc{zheng2024contrastivedifferencepredictivecoding,
+      title={Contrastive Difference Predictive Coding}, 
+      author={Chongyi Zheng and Ruslan Salakhutdinov and Benjamin Eysenbach},
+      year={2024},
+      eprint={2310.20141},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2310.20141}, 
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1214</fr:anchor><fr:addr
+type="user">nachum2019</fr:addr><fr:route>nachum2019.xml</fr:route><fr:title
+text="Near Optimal Representation Learning for Hierarchical Reinforcement Learning">Near Optimal Representation Learning for Hierarchical Reinforcement Learning</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
+name="bibtex"><![CDATA[@misc{nachum2019nearoptimalrepresentationlearninghierarchical,
+      title={Near-Optimal Representation Learning for Hierarchical Reinforcement Learning}, 
+      author={Ofir Nachum and Shixiang Gu and Honglak Lee and Sergey Levine},
+      year={2019},
+      eprint={1810.01257},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/1810.01257}, 
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1587</fr:anchor><fr:addr
+type="user">kak-0004</fr:addr><fr:route>kak-0004.xml</fr:route><fr:title
+text="Disk">Disk</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>29</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Here are past things of interest that may be of interest in the future. Unfortunately, they are no longer "hot" and have been paged out (hence the name!).</fr:p><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1188</fr:anchor><fr:addr
+type="user">kak-0003</fr:addr><fr:route>kak-0003.xml</fr:route><fr:title
+text="Notes">Notes</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>This will be home to my notes that have graduated from <fr:link
+type="local"
+href="kak-0015.xml"
+addr="kak-0015"
+title="Learning">Learning</fr:link> either because they are no longer in development or because I am happy with where they are currently at.</fr:p>
+  
+    <fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1190</fr:anchor><fr:addr
+type="machine">#349</fr:addr><fr:route>unstable-349.xml</fr:route><fr:title
+text="Old  Notes from Undergrad">Old <fr:tex
+display="inline"><![CDATA[\LaTeX ]]></fr:tex> Notes from Undergrad</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter>
+<fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1192</fr:anchor><fr:addr
+type="user">algebra</fr:addr><fr:route>algebra.xml</fr:route><fr:title
+text="Math 494 Notes">Math 494 Notes</fr:title><fr:taxon>Reference</fr:taxon><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors><fr:meta
+name="external">notes/494-note.pdf</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1194</fr:anchor><fr:addr
+type="user">analysis</fr:addr><fr:route>analysis.xml</fr:route><fr:title
+text="Math 395 Notes">Math 395 Notes</fr:title><fr:taxon>Reference</fr:taxon><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors><fr:meta
+name="external">notes/395-note.pdf</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1196</fr:anchor><fr:addr
+type="user">functional</fr:addr><fr:route>functional.xml</fr:route><fr:title
+text="Math 602 Notes">Math 602 Notes</fr:title><fr:taxon>Reference</fr:taxon><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors><fr:meta
+name="external">notes/602-note.pdf</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1198</fr:anchor><fr:addr
+type="user">measure</fr:addr><fr:route>measure.xml</fr:route><fr:title
+text="Math 597 Notes">Math 597 Notes</fr:title><fr:taxon>Reference</fr:taxon><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors><fr:meta
+name="external">notes/597-note.pdf</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree>
+</fr:mainmatter><fr:backmatter /></fr:tree>
+  
+
+  
+    <fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1200</fr:anchor><fr:addr
+type="machine">#350</fr:addr><fr:route>unstable-350.xml</fr:route><fr:title
+text="Previous Group Meeting Talks">Previous Group Meeting Talks</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter>
+<fr:p><fr:info>Query returned no results</fr:info></fr:p>
+</fr:mainmatter><fr:backmatter /></fr:tree>
+  
+</fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1202</fr:anchor><fr:addr
+type="user">log</fr:addr><fr:route>log.xml</fr:route><fr:title
+text="Notebook">Notebook</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>29</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1203</fr:anchor><fr:addr
+type="user">kak-003T</fr:addr><fr:route>kak-003T.xml</fr:route><fr:title
+text="Accelerating Minimap2">Accelerating Minimap2</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>366</fr:anchor><fr:addr
+type="machine">#257</fr:addr><fr:route>unstable-257.xml</fr:route><fr:title
+text="Useful Resources">Useful Resources</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:ul><fr:li><fr:link
+type="external"
+href="https://github.com/Minimap2onGPU/mm2-gb">minimap2-gb</fr:link></fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>368</fr:anchor><fr:addr
+type="machine">#258</fr:addr><fr:route>unstable-258.xml</fr:route><fr:title
+text="Related Work">Related Work</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>370</fr:anchor><fr:addr
+type="user">dongMm2gbGPUAccelerated2024</fr:addr><fr:route>dongMm2gbGPUAccelerated2024.xml</fr:route><fr:title
+text="Mm2-gb: GPU Accelerated Minimap2 for Long Read DNA Mapping">Mm2-gb: GPU Accelerated Minimap2 for Long Read DNA Mapping</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>3</fr:month></fr:date><fr:authors><fr:author>Juechu Dong</fr:author><fr:author>Xueshen Liu</fr:author><fr:author>Harisankar Sadasivan</fr:author><fr:author>Sriranjani Sitaraman</fr:author><fr:author>Satish Narayanasamy</fr:author></fr:authors><fr:meta
+name="doi">10.1101/2024.03.23.586366</fr:meta><fr:meta
+name="bibtex"><![CDATA[@misc{dongMm2gbGPUAccelerated2024,
+ title = {Mm2-Gb: {{GPU Accelerated Minimap2}} for {{Long Read DNA Mapping}}},
+ author = {Dong, Juechu and Liu, Xueshen and Sadasivan, Harisankar and Sitaraman, Sriranjani and Narayanasamy, Satish},
+ year = {2024},
+ doi = {10.1101/2024.03.23.586366},
+ urldate = {2024-12-11},
+ file = {/home/kellen/Zotero/storage/3PUF5B6Y/Dong et al. - 2024 - mm2-gb GPU Accelerated Minimap2 for Long Read DNA.pdf},
+ langid = {english},
+ copyright = {http://creativecommons.org/licenses/by-nc/4.0/},
+ abstract = {Long-read DNA sequencing is becoming increasingly popular for genetic diagnostics. Minimap2 is the state-of-the-art long-read aligner. However, Minimap2's chaining step is slow on the CPU and takes 40-68\% of the time especially for long DNA reads. Prior works in accelerating Minimap2 either lose mapping accuracy, are closed source (and not updated) or deliver inconsistent speedups for longer reads. We introduce mm2-gb which accelerates the chaining step of Minimap2 on GPU without compromising mapping accuracy. In addition to intra- and inter-read parallelism exploited by prior works, mm2-gb exploits finer levels of parallelism by breaking down high latency large workloads into smaller independent segments that can be run in parallel and leverages several strategies for better workload balancing including split-kernels and prioritized scheduling of segments based on sorted size. We show that mm2-gb on an AMD Instinct™ MI210 GPU achieves 2.57-5.33x performance improvement on long nanopore reads (10kb-100kb), and 1.87x performance gain on super long reads (100kb-300kb) compared to SIMD accelerated mm2-fast. mm2-gb is open-sourced and available at https://github.com/Minimap2onGPU/minimap2.},
+ month = {March},
+ shorttitle = {Mm2-Gb}
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>376</fr:anchor><fr:addr
+type="user">kalikarAcceleratingLongreadAnalysis2021</fr:addr><fr:route>kalikarAcceleratingLongreadAnalysis2021.xml</fr:route><fr:title
+text="Accelerating long-read analysis on modern CPUs">Accelerating long-read analysis on modern CPUs</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2021</fr:year><fr:month>7</fr:month></fr:date><fr:authors><fr:author>Saurabh Kalikar</fr:author><fr:author>Chirag Jain</fr:author><fr:author>Vasimuddin Md</fr:author><fr:author>Sanchit Misra</fr:author></fr:authors><fr:meta
+name="doi">10.1101/2021.07.21.453294</fr:meta><fr:meta
+name="bibtex"><![CDATA[@misc{kalikarAcceleratingLongreadAnalysis2021,
+ title = {Accelerating Long-Read Analysis on Modern {{CPUs}}},
+ author = {Kalikar, Saurabh and Jain, Chirag and Md, Vasimuddin and Misra, Sanchit},
+ year = {2021},
+ doi = {10.1101/2021.07.21.453294},
+ urldate = {2024-12-11},
+ file = {/home/kellen/Zotero/storage/FIX8U6F5/Kalikar et al. - 2021 - Accelerating long-read analysis on modern CPUs.pdf},
+ langid = {english},
+ abstract = {Long read sequencing is now routinely used at scale for genomics and transcriptomics applications. Mapping of long reads or a draft genome assembly to a reference sequence is often one of the most time consuming steps in these applications. Here, we present techniques to accelerate minimap2, a widely used software for mapping. We present multiple optimizations using SIMD parallelization, e cient cache utilization and a learned index data structure to accelerate its three main computational modules, i.e., seeding, chaining and pairwise sequence alignment. These result in reduction of end-to-end mapping time of minimap2 by up to 1.8{#{\RightArrowBar}} while maintaining identical output.},
+ month = {July}
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>381</fr:anchor><fr:addr
+type="user">liMinimap2PairwiseAlignment2018</fr:addr><fr:route>liMinimap2PairwiseAlignment2018.xml</fr:route><fr:title
+text="Minimap2: Pairwise alignment for nucleotide sequences">Minimap2: Pairwise alignment for nucleotide sequences</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2018</fr:year><fr:month>9</fr:month></fr:date><fr:authors><fr:author>Heng Li</fr:author></fr:authors><fr:meta
+name="doi">10.1093/bioinformatics/bty191</fr:meta><fr:meta
+name="bibtex"><![CDATA[@article{liMinimap2PairwiseAlignment2018,
+ title = {Minimap2: Pairwise Alignment for Nucleotide Sequences},
+ author = {Li, Heng},
+ year = {2018},
+ doi = {10.1093/bioinformatics/bty191},
+ urldate = {2024-12-11},
+ journal = {Bioinformatics},
+ editor = {Birol, Inanc},
+ volume = {34},
+ number = {18},
+ pages = {3094--3100},
+ file = {/home/kellen/Zotero/storage/U4V4YFWK/Li - 2018 - Minimap2 pairwise alignment for nucleotide sequen.pdf},
+ langid = {english},
+ copyright = {https://academic.oup.com/journals/pages/open\_access/funder\_policies/chorus/standard\_publication\_model},
+ abstract = {Motivation: Recent advances in sequencing technologies promise ultra-long reads of \$100 kb in average, full-length mRNA or cDNA reads in high throughput and genomic contigs over 100 Mb in length. Existing alignment programs are unable or inefficient to process such data at scale, which presses for the development of new alignment algorithms.},
+ issn = {1367-4803, 1367-4811},
+ month = {September},
+ shorttitle = {Minimap2}
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree>
+  
+    <fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>383</fr:anchor><fr:addr
+type="machine">#260</fr:addr><fr:route>unstable-260.xml</fr:route><fr:title
+text="Data structure">Data structure</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter>
+  <fr:ul><fr:li>A <fr:em>query</fr:em> is a genome sequence we are trying to align to a <fr:em>reference</fr:em> genome sequence</fr:li>
+    <fr:li>An <fr:em>anchor</fr:em> is a 3-tuple <fr:tex
+display="inline"><![CDATA[(x,y,w)]]></fr:tex>, indicating interval <fr:tex
+display="inline"><![CDATA[[x-w+1,x]]]></fr:tex> on the reference matching interval <fr:tex
+display="inline"><![CDATA[[y-w+1,y]]]></fr:tex> on the query.</fr:li>
+    <fr:li>A <fr:em>chain</fr:em> is a sequence of <fr:em>anchors</fr:em> chosen iteratively by 
+    <fr:tex
+display="block"><![CDATA[\operatorname {argmax}_{j}\{f(j)+x(j,i)-\beta (j,i)\}]]></fr:tex></fr:li></fr:ul>
+  
+    <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>385</fr:anchor><fr:addr
+type="machine">#259</fr:addr><fr:route>unstable-259.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter>
+    lol.
+    </fr:mainmatter><fr:backmatter /></fr:tree>
+
+</fr:mainmatter><fr:backmatter /></fr:tree>
+  
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>387</fr:anchor><fr:addr
+type="machine">#261</fr:addr><fr:route>unstable-261.xml</fr:route><fr:title
+text="Daily Tracker">Daily Tracker</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>389</fr:anchor><fr:addr
+type="machine">#262</fr:addr><fr:route>unstable-262.xml</fr:route><fr:title
+text="Year 2025">Year 2025</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>391</fr:anchor><fr:addr
+type="machine">#263</fr:addr><fr:route>unstable-263.xml</fr:route><fr:title
+text="January, 2025">January, 2025</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>393</fr:anchor><fr:addr
+type="machine">#264</fr:addr><fr:route>unstable-264.xml</fr:route><fr:title
+text="01-28-25">01-28-25</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><html:div
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="markdownit grace-loading">
+        Unraveling where the backtracking kernel is called:
+        <fr:ul><fr:li><fr:code>init_stream_gpu</fr:code> calls the <fr:code>plmem</fr:code> functions that initialize the CUDA streams.</fr:li>
+          <fr:ul><fr:li>Called in <fr:code>main.c</fr:code></fr:li></fr:ul>
+          <fr:li>GPU chaining is started by <fr:code>chain_stream_gpu</fr:code></fr:li></fr:ul>
+      <fr:strong>TODO:</fr:strong>
+      <fr:ul><fr:li><fr:strong>Short term</fr:strong>
+      <fr:ul><fr:li>Need to take u, z as input via devicePtr (need to modify devicePtr)</fr:li>
+        <fr:li>Pre-allocate device memory for u,z</fr:li>
+        <fr:li>Port km, f, p to devicePtr counterpart</fr:li>
+        <fr:li>Probably need to add n_u, n_v to devicePtr too?</fr:li></fr:ul></fr:li>
+      <fr:li><fr:strong>Medium term</fr:strong>
+        <fr:ul><fr:li>radix_sort kernel</fr:li></fr:ul></fr:li>
+      <fr:li><fr:strong>Questions</fr:strong>
+        <fr:ul><fr:li>How to cudaStreams?</fr:li></fr:ul></fr:li></fr:ul>
+    </html:div></fr:mainmatter><fr:backmatter /></fr:tree>
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1205</fr:anchor><fr:addr
+type="user">kak-002V</fr:addr><fr:route>kak-002V.xml</fr:route><fr:title
+text="Contrastive Safe RL">Contrastive Safe RL</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>399</fr:anchor><fr:addr
+type="machine">#287</fr:addr><fr:route>unstable-287.xml</fr:route><fr:title
+text="Useful Resources">Useful Resources</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:ul><fr:li><fr:link
+type="external"
+href="https://github.com/MichalBortkiewicz/JaxGCRL">Accelerating Goal-Conditioned RL</fr:link></fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>401</fr:anchor><fr:addr
+type="machine">#288</fr:addr><fr:route>unstable-288.xml</fr:route><fr:title
+text="Related Work">Related Work</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>403</fr:anchor><fr:addr
+type="user">eysenbach2023</fr:addr><fr:route>eysenbach2023.xml</fr:route><fr:title
+text="Constrastive Learning as Goal Conditioned Reinforcement Learning">Constrastive Learning as Goal Conditioned Reinforcement Learning</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
+name="abstract">
+In reinforcement learning (RL), it is easier to solve a task if
+              given a good representation. While deep RL should automatically
+              acquire such good representations, prior work often finds that
+              learning representations in an end-to-end fashion is unstable and
+              instead equip RL algorithms with additional representation learning
+              parts (e.g., auxiliary losses, data augmentation). How can we
+              design RL algorithms that directly acquire good representations? In
+              this paper, instead of adding representation learning parts to an
+              existing RL algorithm, we show (contrastive) representation
+              learning methods can be cast as RL algorithms in their own right.
+              To do this, we build upon prior work and apply contrastive
+              representation learning to action-labeled trajectories, in such a
+              way that the (inner product of) learned representations exactly
+              corresponds to a goal-conditioned value function. We use this idea
+              to reinterpret a prior RL method as performing contrastive learning
+              , and then use the idea to propose a much simpler method that
+              achieves similar performance. Across a range of goal-conditioned RL
+              tasks, we demonstrate that contrastive RL methods achieve higher
+              success rates than prior non-contrastive methods, including in the
+              offline RL setting. We also show that contrastive RL outperforms
+              prior methods on image-based tasks, without using data augmentation
+              or auxiliary objectives.
+  </fr:meta><fr:meta
+name="doi">10.48550/arXiv.2206.07568</fr:meta><fr:meta
+name="bibtex"><![CDATA[@misc{eysenbachContrastiveLearningGoalConditioned2023,
+  title = {Contrastive {{Learning}} as {{Goal-Conditioned Reinforcement Learning
+           }}},
+  author = {Eysenbach, Benjamin and Zhang, Tianjun and Salakhutdinov, Ruslan and
+            Levine, Sergey},
+  year = {2023},
+  month = feb,
+  number = {arXiv:2206.07568},
+  eprint = {2206.07568},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  urldate = {2024-09-06},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science -
+              Machine Learning},
+  file = {/home/kellen/Zotero/storage/WVQKIMN4/Eysenbach et al. - 2023 -
+          Contrastive Learning as Goal-Conditioned Reinforcement Learning.pdf},
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>404</fr:anchor><fr:addr
+type="user">vandenOord2018</fr:addr><fr:route>vandenOord2018.xml</fr:route><fr:title
+text="Contrastive Predictive Decoding">Contrastive Predictive Decoding</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
+name="doi">10.48550/arXiv.1807.03748</fr:meta><fr:meta
+name="bibtex"><![CDATA[@misc{oord2019representationlearningcontrastivepredictive,
+      title={Representation Learning with Contrastive Predictive Coding}, 
+      author={Aaron van den Oord and Yazhe Li and Oriol Vinyals},
+      year={2019},
+      eprint={1807.03748},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/1807.03748}, 
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>405</fr:anchor><fr:addr
+type="user">zheng2024</fr:addr><fr:route>zheng2024.xml</fr:route><fr:title
+text="Contrastive Difference Predictive Coding">Contrastive Difference Predictive Coding</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
+name="bibtex"><![CDATA[@misc{zheng2024contrastivedifferencepredictivecoding,
+      title={Contrastive Difference Predictive Coding}, 
+      author={Chongyi Zheng and Ruslan Salakhutdinov and Benjamin Eysenbach},
+      year={2024},
+      eprint={2310.20141},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2310.20141}, 
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>406</fr:anchor><fr:addr
+type="user">nachum2019</fr:addr><fr:route>nachum2019.xml</fr:route><fr:title
+text="Near Optimal Representation Learning for Hierarchical Reinforcement Learning">Near Optimal Representation Learning for Hierarchical Reinforcement Learning</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
+name="bibtex"><![CDATA[@misc{nachum2019nearoptimalrepresentationlearninghierarchical,
+      title={Near-Optimal Representation Learning for Hierarchical Reinforcement Learning}, 
+      author={Ofir Nachum and Shixiang Gu and Honglak Lee and Sergey Levine},
+      year={2019},
+      eprint={1810.01257},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/1810.01257}, 
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>407</fr:anchor><fr:addr
+type="user">gutmann2012</fr:addr><fr:route>gutmann2012.xml</fr:route><fr:title
+text="Noise-contrastive Estimation">Noise-contrastive Estimation</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
+name="abstract">We present a new estimation principle for parameterized statistical models. The idea is to perform nonlinear logistic regression to discriminate between the observed data and some artificially generated noise, using the model log-density function in the regression nonlinearity.  We show that this leads to a consistent (convergent) estimator of the parameters, and analyze the asymptotic variance.  In particular, the method is shown to directly work for unnormalized models, i.e. models where the density function does not integrate to one. The normalization constant can be estimated just like any other parameter. For a tractable ICA model, we compare the method with other estimation methods that can be used to learn unnormalized models, including score matching, contrastive divergence, and maximum-likelihood where the normalization constant is estimated with importance sampling. Simulations show that noise-contrastive estimation offers the best trade-off between computational and statistical efficiency. The method is then applied to the modeling of natural images: We show that the method can successfully estimate a large-scale two-layer model and a Markov random field.</fr:meta><fr:meta
+name="bibtex"><![CDATA[@InProceedings{pmlr-v9-gutmann10a,
+  title = 	 {Noise-contrastive estimation: A new estimation principle for unnormalized statistical models},
+  author = 	 {Gutmann, Michael and Hyvärinen, Aapo},
+  booktitle = 	 {Proceedings of the Thirteenth International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {297--304},
+  year = 	 {2010},
+  editor = 	 {Teh, Yee Whye and Titterington, Mike},
+  volume = 	 {9},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Chia Laguna Resort, Sardinia, Italy},
+  month = 	 {13--15 May},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v9/gutmann10a/gutmann10a.pdf},
+  url = 	 {https://proceedings.mlr.press/v9/gutmann10a.html},
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>408</fr:anchor><fr:addr
+type="machine">#289</fr:addr><fr:route>unstable-289.xml</fr:route><fr:title
+text="Daily Tracker">Daily Tracker</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>410</fr:anchor><fr:addr
+type="machine">#290</fr:addr><fr:route>unstable-290.xml</fr:route><fr:title
+text="Year 2025">Year 2025</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>412</fr:anchor><fr:addr
+type="machine">#291</fr:addr><fr:route>unstable-291.xml</fr:route><fr:title
+text="January, 2025">January, 2025</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>414</fr:anchor><fr:addr
+type="machine">#292</fr:addr><fr:route>unstable-292.xml</fr:route><fr:title
+text="01-22-25">01-22-25</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><html:div
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="markdownit grace-loading">
+        <fr:strong>Brax Notes</fr:strong>
+        <fr:p><fr:ul><fr:li>Brax state has <fr:tex
+display="inline"><![CDATA[q]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[q_d]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[x_d]]></fr:tex></fr:li>
+                <fr:ul><fr:li>We care about <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>, which is a <fr:link
+type="external"
+href="https://github.com/google/brax/blob/d48b0b373a6478838eac325cadc6d8983837a968/brax/base.py#L171">transform</fr:link> that has attributes [<fr:code>pos</fr:code>, <fr:code>rot</fr:code>] that store [cartesian, quaternion] respectively.</fr:li>
+                    <fr:li>Axis 0 is the different objects defined by the xml file.</fr:li>
+                    <fr:li>We added target and obstacle as objects in the xml file (super hacky).</fr:li></fr:ul>
+                  <fr:li>Specify <fr:code>init_qpos</fr:code> in xml file, which Brax then uses kinematics to translate to absolute position and fills <fr:code>x.pos</fr:code>. This is why we only have to set <fr:code>q</fr:code> <fr:link
+type="external"
+href="https://github.com/MichalBortkiewicz/JaxGCRL/blob/b54cd4cdc968a365f9113fed1822e7e774a113e9/envs/ant.py#L90">here</fr:link> and reference <fr:code>x.pos</fr:code> later.</fr:li></fr:ul></fr:p>
+      </html:div></fr:mainmatter><fr:backmatter /></fr:tree>
+<fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>416</fr:anchor><fr:addr
+type="machine">#293</fr:addr><fr:route>unstable-293.xml</fr:route><fr:title
+text="01-27-25">01-27-25</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><html:div
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="markdownit grace-loading">
+        From this <fr:link
+type="external"
+href="https://arxiv.org/pdf/1911.09101">paper</fr:link>, it seems like maybe linear combination is fine? Instead we want dual descent on lambda? Maximizing the <fr:tex
+display="inline"><![CDATA[Q - \lambda  Q]]></fr:tex> is the same as the policy from their modified reward. Since our constraints / goal are not fixed, I was thinking of neural network approximate of lambda as a function of goal and constraint. Since the trajectories are technically off policy, might need to do something about (state, action) also?
+        Want to solve constrained optimization problem.
+        <fr:tex
+display="block"><![CDATA[         \begin {align*} \pi _{\phi }(s, a, g, g') = &\max _{\theta } Q_{\theta }(s, a, g) \\ &\text {s.t.} \quad  Q_{\theta }(s, a, g') \leq  0         \end {align*}         ]]></fr:tex>
+        Since in <fr:link
+type="local"
+href="eysenbach2023.xml"
+addr="eysenbach2023"
+title="Constrastive Learning as Goal Conditioned Reinforcement Learning">Constrastive Learning as Goal Conditioned Reinforcement Learning</fr:link> they get away with "off-policy" <fr:tex
+display="inline"><![CDATA[Q]]></fr:tex> function for DDPG, I think it is good enough to start with <fr:tex
+display="inline"><![CDATA[\lambda _{\phi }(g, g')]]></fr:tex>.
+      </html:div></fr:mainmatter><fr:backmatter /></fr:tree>
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1207</fr:anchor><fr:addr
+type="user">kak-002Y</fr:addr><fr:route>kak-002Y.xml</fr:route><fr:title
+text="Continual / Streaming Successor Features">Continual / Streaming Successor Features</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>823</fr:anchor><fr:addr
+type="machine">#275</fr:addr><fr:route>unstable-275.xml</fr:route><fr:title
+text="Useful Resources">Useful Resources</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:ul><fr:li><fr:link
+type="external"
+href="https://github.com/mohmdelsayed/streaming-drl">Streaming DRL</fr:link></fr:li>
+    <fr:li><fr:link
+type="external"
+href="https://github.com/raymondchua/simple_successor_features">Simple Successor Features</fr:link></fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>825</fr:anchor><fr:addr
+type="machine">#276</fr:addr><fr:route>unstable-276.xml</fr:route><fr:title
+text="Related Work">Related Work</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p><fr:info>Query returned no results</fr:info></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>827</fr:anchor><fr:addr
+type="machine">#277</fr:addr><fr:route>unstable-277.xml</fr:route><fr:title
+text="Daily Tracker">Daily Tracker</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>829</fr:anchor><fr:addr
+type="machine">#278</fr:addr><fr:route>unstable-278.xml</fr:route><fr:title
+text="Year 2025">Year 2025</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>831</fr:anchor><fr:addr
+type="machine">#279</fr:addr><fr:route>unstable-279.xml</fr:route><fr:title
+text="January, 2025">January, 2025</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>833</fr:anchor><fr:addr
+type="machine">#280</fr:addr><fr:route>unstable-280.xml</fr:route><fr:title
+text="01-24-25">01-24-25</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><html:div
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="markdownit grace-loading">
+      </html:div></fr:mainmatter><fr:backmatter /></fr:tree>
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1209</fr:anchor><fr:addr
+type="user">kak-002X</fr:addr><fr:route>kak-002X.xml</fr:route><fr:title
+text="Hierarchical Contrastive RL">Hierarchical Contrastive RL</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>839</fr:anchor><fr:addr
+type="machine">#281</fr:addr><fr:route>unstable-281.xml</fr:route><fr:title
+text="Useful Resources">Useful Resources</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:ul><fr:li><fr:link
+type="external"
+href="https://github.com/MichalBortkiewicz/JaxGCRL">Accelerating Goal-Conditioned RL</fr:link></fr:li>
+    <fr:li><fr:link
+type="external"
+href="https://github.com/snu-mllab/Achievement-Distillation">Achievement Distillation</fr:link></fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>841</fr:anchor><fr:addr
+type="machine">#282</fr:addr><fr:route>unstable-282.xml</fr:route><fr:title
+text="Related Work">Related Work</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>843</fr:anchor><fr:addr
+type="user">eysenbach2023</fr:addr><fr:route>eysenbach2023.xml</fr:route><fr:title
+text="Constrastive Learning as Goal Conditioned Reinforcement Learning">Constrastive Learning as Goal Conditioned Reinforcement Learning</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
+name="abstract">
+In reinforcement learning (RL), it is easier to solve a task if
+              given a good representation. While deep RL should automatically
+              acquire such good representations, prior work often finds that
+              learning representations in an end-to-end fashion is unstable and
+              instead equip RL algorithms with additional representation learning
+              parts (e.g., auxiliary losses, data augmentation). How can we
+              design RL algorithms that directly acquire good representations? In
+              this paper, instead of adding representation learning parts to an
+              existing RL algorithm, we show (contrastive) representation
+              learning methods can be cast as RL algorithms in their own right.
+              To do this, we build upon prior work and apply contrastive
+              representation learning to action-labeled trajectories, in such a
+              way that the (inner product of) learned representations exactly
+              corresponds to a goal-conditioned value function. We use this idea
+              to reinterpret a prior RL method as performing contrastive learning
+              , and then use the idea to propose a much simpler method that
+              achieves similar performance. Across a range of goal-conditioned RL
+              tasks, we demonstrate that contrastive RL methods achieve higher
+              success rates than prior non-contrastive methods, including in the
+              offline RL setting. We also show that contrastive RL outperforms
+              prior methods on image-based tasks, without using data augmentation
+              or auxiliary objectives.
+  </fr:meta><fr:meta
+name="doi">10.48550/arXiv.2206.07568</fr:meta><fr:meta
+name="bibtex"><![CDATA[@misc{eysenbachContrastiveLearningGoalConditioned2023,
+  title = {Contrastive {{Learning}} as {{Goal-Conditioned Reinforcement Learning
+           }}},
+  author = {Eysenbach, Benjamin and Zhang, Tianjun and Salakhutdinov, Ruslan and
+            Levine, Sergey},
+  year = {2023},
+  month = feb,
+  number = {arXiv:2206.07568},
+  eprint = {2206.07568},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  urldate = {2024-09-06},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science -
+              Machine Learning},
+  file = {/home/kellen/Zotero/storage/WVQKIMN4/Eysenbach et al. - 2023 -
+          Contrastive Learning as Goal-Conditioned Reinforcement Learning.pdf},
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>844</fr:anchor><fr:addr
+type="user">vandenOord2018</fr:addr><fr:route>vandenOord2018.xml</fr:route><fr:title
+text="Contrastive Predictive Decoding">Contrastive Predictive Decoding</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
+name="doi">10.48550/arXiv.1807.03748</fr:meta><fr:meta
+name="bibtex"><![CDATA[@misc{oord2019representationlearningcontrastivepredictive,
+      title={Representation Learning with Contrastive Predictive Coding}, 
+      author={Aaron van den Oord and Yazhe Li and Oriol Vinyals},
+      year={2019},
+      eprint={1807.03748},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/1807.03748}, 
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>845</fr:anchor><fr:addr
+type="user">zheng2024</fr:addr><fr:route>zheng2024.xml</fr:route><fr:title
+text="Contrastive Difference Predictive Coding">Contrastive Difference Predictive Coding</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
+name="bibtex"><![CDATA[@misc{zheng2024contrastivedifferencepredictivecoding,
+      title={Contrastive Difference Predictive Coding}, 
+      author={Chongyi Zheng and Ruslan Salakhutdinov and Benjamin Eysenbach},
+      year={2024},
+      eprint={2310.20141},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2310.20141}, 
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>846</fr:anchor><fr:addr
+type="user">nachum2019</fr:addr><fr:route>nachum2019.xml</fr:route><fr:title
+text="Near Optimal Representation Learning for Hierarchical Reinforcement Learning">Near Optimal Representation Learning for Hierarchical Reinforcement Learning</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
+name="bibtex"><![CDATA[@misc{nachum2019nearoptimalrepresentationlearninghierarchical,
+      title={Near-Optimal Representation Learning for Hierarchical Reinforcement Learning}, 
+      author={Ofir Nachum and Shixiang Gu and Honglak Lee and Sergey Levine},
+      year={2019},
+      eprint={1810.01257},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/1810.01257}, 
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>847</fr:anchor><fr:addr
+type="user">gutmann2012</fr:addr><fr:route>gutmann2012.xml</fr:route><fr:title
+text="Noise-contrastive Estimation">Noise-contrastive Estimation</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
+name="abstract">We present a new estimation principle for parameterized statistical models. The idea is to perform nonlinear logistic regression to discriminate between the observed data and some artificially generated noise, using the model log-density function in the regression nonlinearity.  We show that this leads to a consistent (convergent) estimator of the parameters, and analyze the asymptotic variance.  In particular, the method is shown to directly work for unnormalized models, i.e. models where the density function does not integrate to one. The normalization constant can be estimated just like any other parameter. For a tractable ICA model, we compare the method with other estimation methods that can be used to learn unnormalized models, including score matching, contrastive divergence, and maximum-likelihood where the normalization constant is estimated with importance sampling. Simulations show that noise-contrastive estimation offers the best trade-off between computational and statistical efficiency. The method is then applied to the modeling of natural images: We show that the method can successfully estimate a large-scale two-layer model and a Markov random field.</fr:meta><fr:meta
+name="bibtex"><![CDATA[@InProceedings{pmlr-v9-gutmann10a,
+  title = 	 {Noise-contrastive estimation: A new estimation principle for unnormalized statistical models},
+  author = 	 {Gutmann, Michael and Hyvärinen, Aapo},
+  booktitle = 	 {Proceedings of the Thirteenth International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {297--304},
+  year = 	 {2010},
+  editor = 	 {Teh, Yee Whye and Titterington, Mike},
+  volume = 	 {9},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Chia Laguna Resort, Sardinia, Italy},
+  month = 	 {13--15 May},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v9/gutmann10a/gutmann10a.pdf},
+  url = 	 {https://proceedings.mlr.press/v9/gutmann10a.html},
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>848</fr:anchor><fr:addr
+type="machine">#283</fr:addr><fr:route>unstable-283.xml</fr:route><fr:title
+text="Daily Tracker">Daily Tracker</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>850</fr:anchor><fr:addr
+type="machine">#284</fr:addr><fr:route>unstable-284.xml</fr:route><fr:title
+text="Year 2025">Year 2025</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>852</fr:anchor><fr:addr
+type="machine">#285</fr:addr><fr:route>unstable-285.xml</fr:route><fr:title
+text="January, 2025">January, 2025</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>854</fr:anchor><fr:addr
+type="machine">#286</fr:addr><fr:route>unstable-286.xml</fr:route><fr:title
+text="01-24-25">01-24-25</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><html:div
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="markdownit grace-loading">
+      </html:div></fr:mainmatter><fr:backmatter /></fr:tree>
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1211</fr:anchor><fr:addr
+type="machine">#244</fr:addr><fr:route>unstable-244.xml</fr:route><fr:title
+text="Papers of a Week">Papers of a Week</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>29</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>I am committing to reading (fairly rigorously) one paper a week. Here I will accumulate my notes and thoughts on each of these papers as I go.</fr:p><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1212</fr:anchor><fr:addr
+type="user">mcleod2022</fr:addr><fr:route>mcleod2022.xml</fr:route><fr:title
+text="Continual Auxiliary Task Learning">Continual Auxiliary Task Learning</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
+name="abstract">
+  Learning auxiliary tasks, such as multiple predictions about the world, can provide many benefits to reinforcement learning systems. A variety of off-policy learning algorithms have been developed to learn such predictions, but as yet there is little work on how to adapt the behavior to gather useful data for those off-policy predictions. In this work, we investigate a reinforcement learning system designed to learn a collection of auxiliary tasks, with a behavior policy learning to take actions to improve those auxiliary predictions. We highlight the inherent non-stationarity in this continual auxiliary task learning problem, for both prediction learners and the behavior learner. We develop an algorithm based on successor features that facilitates tracking under non-stationary rewards, and prove the separation into learning successor features and rewards provides convergence rate improvements. We conduct an in-depth study into the resulting multi-prediction learning system. 
+  </fr:meta><fr:meta
+name="doi">10.48550/arXiv.2202.11133</fr:meta><fr:meta
+name="bibtex"><![CDATA[@misc{mcleod2022continualauxiliarytasklearning,
+      title={Continual Auxiliary Task Learning}, 
+      author={Matthew McLeod and Chunlok Lo and Matthew Schlegel and Andrew Jacobsen and Raksha Kumaraswamy and Martha White and Adam White},
+      year={2022},
+      eprint={2202.11133},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2202.11133}, 
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1213</fr:anchor><fr:addr
+type="user">zheng2024</fr:addr><fr:route>zheng2024.xml</fr:route><fr:title
+text="Contrastive Difference Predictive Coding">Contrastive Difference Predictive Coding</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
+name="bibtex"><![CDATA[@misc{zheng2024contrastivedifferencepredictivecoding,
+      title={Contrastive Difference Predictive Coding}, 
+      author={Chongyi Zheng and Ruslan Salakhutdinov and Benjamin Eysenbach},
+      year={2024},
+      eprint={2310.20141},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2310.20141}, 
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1214</fr:anchor><fr:addr
+type="user">nachum2019</fr:addr><fr:route>nachum2019.xml</fr:route><fr:title
+text="Near Optimal Representation Learning for Hierarchical Reinforcement Learning">Near Optimal Representation Learning for Hierarchical Reinforcement Learning</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
+name="bibtex"><![CDATA[@misc{nachum2019nearoptimalrepresentationlearninghierarchical,
+      title={Near-Optimal Representation Learning for Hierarchical Reinforcement Learning}, 
+      author={Ofir Nachum and Shixiang Gu and Honglak Lee and Sergey Levine},
+      year={2019},
+      eprint={1810.01257},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/1810.01257}, 
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

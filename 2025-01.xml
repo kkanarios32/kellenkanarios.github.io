@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>369</fr:anchor><fr:addr
+type="user">2025-01</fr:addr><fr:route>2025-01.xml</fr:route><fr:title
+text="Continual / Streaming Successor Features › Daily Tracker › Year 2025 › January, 2025"><fr:link
+type="local"
+href="2025.xml"
+addr="2025"
+title="Continual / Streaming Successor Features › Daily Tracker › Year 2025"><fr:link
+type="local"
+href="daily.xml"
+addr="daily"
+title="Continual / Streaming Successor Features › Daily Tracker"><fr:link
+type="local"
+href="kak-002Y.xml"
+addr="kak-002Y"
+title="Continual / Streaming Successor Features">Continual / Streaming Successor Features</fr:link> › Daily Tracker</fr:link> › Year 2025</fr:link> › January, 2025</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>324</fr:anchor><fr:addr
+type="machine">#255</fr:addr><fr:route>unstable-255.xml</fr:route><fr:title
+text="01-24-25">01-24-25</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><html:div
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="markdownit grace-loading">
+      </html:div></fr:mainmatter><fr:backmatter /></fr:tree>
+</fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>371</fr:anchor><fr:addr
+type="user">2025</fr:addr><fr:route>2025.xml</fr:route><fr:title
+text="Continual / Streaming Successor Features › Daily Tracker › Year 2025"><fr:link
+type="local"
+href="daily.xml"
+addr="daily"
+title="Continual / Streaming Successor Features › Daily Tracker"><fr:link
+type="local"
+href="kak-002Y.xml"
+addr="kak-002Y"
+title="Continual / Streaming Successor Features">Continual / Streaming Successor Features</fr:link> › Daily Tracker</fr:link> › Year 2025</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>343</fr:anchor><fr:addr
+type="user">2025-01</fr:addr><fr:route>2025-01.xml</fr:route><fr:title
+text="January, 2025">January, 2025</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>324</fr:anchor><fr:addr
+type="machine">#255</fr:addr><fr:route>unstable-255.xml</fr:route><fr:title
+text="01-24-25">01-24-25</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><html:div
+xmlns:html="http://www.w3.org/1999/xhtml"
+class="markdownit grace-loading">
+      </html:div></fr:mainmatter><fr:backmatter /></fr:tree>
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Related">Related</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>373</fr:anchor><fr:addr
+type="user">kak-002W</fr:addr><fr:route>kak-002W.xml</fr:route><fr:title
+text="Brax Notes">Brax Notes</fr:title><fr:date><fr:year>2025</fr:year><fr:month>1</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:ul><fr:li>Brax state has <fr:tex
+display="inline"><![CDATA[q]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[q_d]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[x_d]]></fr:tex></fr:li>
+        <fr:ul><fr:li>We care about <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>, which is a <fr:link
+type="external"
+href="https://github.com/google/brax/blob/d48b0b373a6478838eac325cadc6d8983837a968/brax/base.py#L171">transform</fr:link> that has attributes [<fr:code>pos</fr:code>, <fr:code>rot</fr:code>] that store [cartesian, quaternion] respectively.</fr:li>
+            <fr:li>Axis 0 is the different objects defined by the xml file.</fr:li>
+            <fr:li>We added target and obstacle as objects in the xml file (super hacky).</fr:li></fr:ul>
+          <fr:li>Specify <fr:code>init_qpos</fr:code> in xml file, which Brax then uses kinematics to translate to absolute position and fills <fr:code>x.pos</fr:code>. This is why we only have to set <fr:code>q</fr:code> <fr:link
+type="external"
+href="https://github.com/MichalBortkiewicz/JaxGCRL/blob/b54cd4cdc968a365f9113fed1822e7e774a113e9/envs/ant.py#L90">here</fr:link> and reference <fr:code>x.pos</fr:code> later.</fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

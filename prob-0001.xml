@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1273</fr:anchor><fr:addr
+type="user">prob-0001</fr:addr><fr:route>prob-0001.xml</fr:route><fr:title
+text="Measure and Integration">Measure and Integration</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>30</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Hopefully this chapter will serve as a refresher in measure theory after my traumatizing experience in undergrad.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>

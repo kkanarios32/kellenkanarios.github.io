@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1006</fr:anchor><fr:addr
+type="user">kak-0026</fr:addr><fr:route>kak-0026.xml</fr:route><fr:title
+text="Reading List / Useful Resources">Reading List / Useful Resources</fr:title><fr:date><fr:year>2024</fr:year><fr:month>12</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:ul><fr:li><fr:link
+type="external"
+href="https://gee.cs.oswego.edu/dl/html/malloc.html">A Memory Allocator</fr:link></fr:li>
+    <fr:li><fr:link
+type="external"
+href="https://github.com/DoctorWkt/acwj">A compiler writing journey</fr:link></fr:li>
+    <fr:li><fr:link
+type="external"
+href="https://www.jmeiners.com/lc3-vm/">Writing your own Virtual Machine</fr:link></fr:li>
+    <fr:li><fr:link
+type="external"
+href="http://www.catb.org/esr/structure-packing/">Struct alignment in C</fr:link></fr:li>
+    <fr:li><fr:link
+type="external"
+href="https://maplant.com/2020-04-25-Writing-a-Simple-Garbage-Collector-in-C.html">Write a Simple Garbage Collector</fr:link></fr:li>
+    <fr:li><fr:link
+type="external"
+href="https://stackoverflow.com/questions/2391679/why-do-we-need-virtual-functions-in-c">Virual function explanation</fr:link></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree>

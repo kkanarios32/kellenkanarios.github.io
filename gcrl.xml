@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>399</fr:anchor><fr:addr
+type="user">gcrl</fr:addr><fr:route>gcrl.xml</fr:route><fr:title
+text="Constrastive Learning as Goal Conditioned Reinforcement Learning">Constrastive Learning as Goal Conditioned Reinforcement Learning</fr:title><fr:taxon>Reference</fr:taxon><fr:authors /><fr:meta
+name="abstract">
+In reinforcement learning (RL), it is easier to solve a task if
+              given a good representation. While deep RL should automatically
+              acquire such good representations, prior work often finds that
+              learning representations in an end-to-end fashion is unstable and
+              instead equip RL algorithms with additional representation learning
+              parts (e.g., auxiliary losses, data augmentation). How can we
+              design RL algorithms that directly acquire good representations? In
+              this paper, instead of adding representation learning parts to an
+              existing RL algorithm, we show (contrastive) representation
+              learning methods can be cast as RL algorithms in their own right.
+              To do this, we build upon prior work and apply contrastive
+              representation learning to action-labeled trajectories, in such a
+              way that the (inner product of) learned representations exactly
+              corresponds to a goal-conditioned value function. We use this idea
+              to reinterpret a prior RL method as performing contrastive learning
+              , and then use the idea to propose a much simpler method that
+              achieves similar performance. Across a range of goal-conditioned RL
+              tasks, we demonstrate that contrastive RL methods achieve higher
+              success rates than prior non-contrastive methods, including in the
+              offline RL setting. We also show that contrastive RL outperforms
+              prior methods on image-based tasks, without using data augmentation
+              or auxiliary objectives.
+  </fr:meta><fr:meta
+name="doi">10.48550/arXiv.2206.07568</fr:meta><fr:meta
+name="bibtex"><![CDATA[@misc{eysenbachContrastiveLearningGoalConditioned2023,
+  title = {Contrastive {{Learning}} as {{Goal-Conditioned Reinforcement Learning
+           }}},
+  author = {Eysenbach, Benjamin and Zhang, Tianjun and Salakhutdinov, Ruslan and
+            Levine, Sergey},
+  year = {2023},
+  month = feb,
+  number = {arXiv:2206.07568},
+  eprint = {2206.07568},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  urldate = {2024-09-06},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science -
+              Machine Learning},
+  file = {/home/kellen/Zotero/storage/WVQKIMN4/Eysenbach et al. - 2023 -
+          Contrastive Learning as Goal-Conditioned Reinforcement Learning.pdf},
+}]]></fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>400</fr:anchor><fr:addr
+type="user">kak-000J</fr:addr><fr:route>kak-000J.xml</fr:route><fr:title
+text="Constrastive Learning as Goal Conditioned Reinforcement Learning"><fr:link
+type="local"
+href="gcrl.xml"
+addr="gcrl"
+title="Constrastive Learning as Goal Conditioned Reinforcement Learning">Constrastive Learning as Goal Conditioned Reinforcement Learning</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>6</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>401</fr:anchor><fr:addr
+type="user">kak-0005</fr:addr><fr:route>kak-0005.xml</fr:route><fr:title
+text="Contrastive Reinforcement Learning">Contrastive Reinforcement Learning</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>In this blog post, we aim to demistify <fr:link
+type="local"
+href="gcrl.xml"
+addr="gcrl"
+title="Constrastive Learning as Goal Conditioned Reinforcement Learning"><fr:em>Contrastive Reinforcement Learning</fr:em></fr:link>. This term often gets thrown around in the dark inner circles of the reinforcement learning community. However, for those that are not familiar with contrastive learning, what does contrastive even mean? For those that are, how can reinforcement learning be contrastive? Throughout this blog post, we will answer these questions and many more.</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>278</fr:anchor><fr:addr
+type="user">kak-0009</fr:addr><fr:route>kak-0009.xml</fr:route><fr:title
+text="Contrastive Learning">Contrastive Learning</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>31</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Prior to understanding contrastive reinforcement learning, it is important to have an at least rudimentary understanding of contrastive learning. Historically, contrastive learning has been used to learn representations. The fundamental idea behind contrastive learning is to encourage the representations of similar outputs to be similar in representation space.</fr:p><fr:p><fr:strong>Supervised setting:</fr:strong> For now, assume we are in the supervised setting (we have access to lables). Suppose that we are learning a representation in <fr:tex
+display="inline"><![CDATA[\mathbb {R}^d]]></fr:tex>. Our model is a classifier on dogs and cats. If we have two dogs <fr:tex
+display="inline"><![CDATA[y_1]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[y_2]]></fr:tex> then we want the learned representation map <fr:tex
+display="block"><![CDATA[\phi : \{\text {dogs}, \text {cats}\} \to  \mathbb {R}^d]]></fr:tex> to be such that <fr:tex
+display="inline"><![CDATA[\phi (y_1)]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\phi (y_2)]]></fr:tex> are "close" in <fr:tex
+display="inline"><![CDATA[\mathbb {R}^d]]></fr:tex>. Now the notion of "close" is to be determined by the user. An example could be to minimize the inner product between their representation maps i.e. we could learn a feature map parametrized by <fr:tex
+display="inline"><![CDATA[\theta ]]></fr:tex> with the following objective <fr:tex
+display="block"><![CDATA[\max _{\theta }\ \langle  \phi _{\theta }(y_1), \phi _{\theta }(y_2) \rangle .]]></fr:tex> Similarly, we want dissimilar outputs to be far apart in representation space. If <fr:tex
+display="inline"><![CDATA[y_3]]></fr:tex> is a cat, then we can introduce a regularization to encourage this i.e.
+<fr:tex
+display="block"><![CDATA[\max _{\theta }\ \langle  \phi _{\theta }(y_1), \phi _{\theta }(y_2) \rangle  - \sum _{i \in  \{1, 2\}} \langle  \phi _{\theta }(y_i), \phi _{\theta }(y_3) \rangle .]]></fr:tex> The astute reader will (correctly) ask why we would do this over supervised learning? The answer is we wouldn't. This is just an illustrative example. The real power of contrastive learning comes from being able to utilize un-labeled samples.</fr:p><fr:p><fr:strong>Unsupervised setting:</fr:strong> Now suppose that we get rid of labels and are just given <fr:tex
+display="inline"><![CDATA[n]]></fr:tex> dog samples <fr:tex
+display="inline"><![CDATA[\mathcal {D}]]></fr:tex> from some distribution <fr:tex
+display="inline"><![CDATA[p_{\mathcal {D}}]]></fr:tex>. We now want to be able to learn <fr:tex
+display="inline"><![CDATA[p_{\theta }]]></fr:tex> to somehow estimate this distribution. An approach is to learn to distinguish the sample dogs given from random noise. To do so, we generate <fr:tex
+display="inline"><![CDATA[n]]></fr:tex> random images <fr:tex
+display="inline"><![CDATA[\mathcal {R}]]></fr:tex> according to some distribution <fr:tex
+display="inline"><![CDATA[p_{\mathcal {R}}]]></fr:tex>. We can now return to the supervised learning setting, where we treat <fr:tex
+display="inline"><![CDATA[\mathcal {D}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathcal {R}]]></fr:tex> as two classes. If we recall standard supervised learning practice, given a sample <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>, we then want to find <fr:tex
+display="block"><![CDATA[p(\mathcal {D} \mid  x) = 1 - p(\mathcal {R} \mid  X).]]></fr:tex> 
+As an explicit example, we will use logistic regression. Namely, we will model <fr:tex
+display="inline"><![CDATA[p(x) = p(\mathcal {D} \mid  x)]]></fr:tex> as <fr:tex
+display="block"><![CDATA[p_{\theta }(x) = \frac {1}{1 + e^{-G_{\theta }(x)}}.]]></fr:tex> However, <fr:tex
+display="inline"><![CDATA[p_{\theta }(x)]]></fr:tex> is estimating <fr:tex
+display="inline"><![CDATA[p(\mathcal {D} \mid  x)]]></fr:tex>, where we care about <fr:tex
+display="inline"><![CDATA[p(x \mid  \mathcal {D})]]></fr:tex>. To estimate the correct quantity, we need to leverage our knowledge of the noise distribution. Recall that if <fr:tex
+display="inline"><![CDATA[p_{\theta }(x) = p(\mathcal {D} \mid  x)]]></fr:tex> then <fr:tex
+display="inline"><![CDATA[G_{\theta }(x) = \log  \frac {p(x \mid  \mathcal {D})}{p(x \mid  \mathcal {R})}]]></fr:tex>. Since we generated the samples from <fr:tex
+display="inline"><![CDATA[\mathcal {R}]]></fr:tex>, we have the explicit distribution i.e. <fr:tex
+display="inline"><![CDATA[p(x \mid  \mathcal {R}) = p_{\mathcal {R}}(x)]]></fr:tex>. Therefore, we can restrict <fr:tex
+display="inline"><![CDATA[G_{\theta }]]></fr:tex> to explicitly learn <fr:tex
+display="inline"><![CDATA[p(x \mid  \mathcal {D})]]></fr:tex> by considering <fr:tex
+display="block"><![CDATA[G_{\theta }(x) = \log  p_{\theta }(x \mid  \mathcal {D}) - \log  p_{\mathcal {R}}(x),]]></fr:tex> considering the cross entropy loss we get the <fr:link
+type="local"
+href="nce.xml"
+addr="nce"
+title="Noise-contrastive Estimation">NCE loss</fr:link></fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>279</fr:anchor><fr:addr
+type="user">kak-000E</fr:addr><fr:route>kak-000E.xml</fr:route><fr:title
+text="NCE loss">NCE loss</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The <fr:em><fr:link
+type="local"
+href="nce.xml"
+addr="nce"
+title="Noise-contrastive Estimation">NCE</fr:link></fr:em> loss aims to minimize the following objective <fr:tex
+display="block"><![CDATA[\mathcal {L}_{N} = - \sum _{t} \log  \left [h(x_t; \theta )\right ] + \log \left [1 - h(y_t; \theta )\right ],]]></fr:tex> where <fr:tex
+display="inline"><![CDATA[x_t]]></fr:tex> are samples from the data distribution and <fr:tex
+display="inline"><![CDATA[y_t]]></fr:tex> are randomly generated samples and <fr:tex
+display="block"><![CDATA[\begin {array}{r c l}{{h({\bf  u};\theta )}}&{{=}}&{{\frac {1}{1+\exp \left [-G({\bf  u};\theta )\right ]},}}\\ {{G({\bf  u};\theta )}}&{{=}}&{{\ln  p_{m}({\bf  u};\theta )-\ln  p_{n}({\bf  u}).}}\end {array}]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>In <fr:link
+type="local"
+href="nce.xml"
+addr="nce"
+title="Noise-contrastive Estimation">Noise-contrastive Estimation</fr:link>, they show under mild conditions that the estimator <fr:tex
+display="inline"><![CDATA[p_{\theta }(x \mid  D) \to  p_{\mathcal {D}}(x)]]></fr:tex> in probability as the number of samples in the loss goes to infinity. Equivalently, the estimator is <fr:link
+type="local"
+href="kak-000F.xml"
+addr="kak-000F"
+title="Consistent estimator">consistent</fr:link>.</fr:p><fr:p><fr:strong>Time series:</fr:strong> Before we get to contrastive RL, it is a natural question to wonder how does this apply to temporal sequences? Concretely, we want to make predictions about the future given the current "context". However, we want to do so in an unsupervised way, meaning we are only given trajectories not a notion of what it means for a trajectory to be good. Naively, one can try to do this in a supervised manner. For a <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> step prediction, this would just be your model predicting what will happen in <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> steps then seeing if it matches what occured <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> steps in the future in the sample trajectory. However, if your sample space <fr:tex
+display="inline"><![CDATA[\mathcal {X}]]></fr:tex> is very high-dimensional, modeling this relationship can require an exorbinant amount of trajectories.</fr:p><fr:p>Fast forwarding to contrastive RL, current work is primarily considered with a particular contrastive objective.</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>280</fr:anchor><fr:addr
+type="user">kak-000B</fr:addr><fr:route>kak-000B.xml</fr:route><fr:title
+text="InfoNCE">InfoNCE</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The <fr:em><fr:link
+type="local"
+href="infonce.xml"
+addr="infonce"
+title="Contrastive Predictive Decoding">InfoNCE</fr:link></fr:em> loss aims to minimize the following information-theoretic objective <fr:tex
+display="block"><![CDATA[\mathcal {L}_{N} = - \mathbb {E}_{\mathcal {X}} \left [\log  \frac {f_k(x_{t + k})}{\sum _{x_j \in  \mathcal {X}} f_k(x_j, c_t)}\right ]]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:p>Now we need to unpack this very ominous loss. To start, what are <fr:tex
+display="inline"><![CDATA[x_k]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[c_t]]></fr:tex>?</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>281</fr:anchor><fr:addr
+type="user">kak-000C</fr:addr><fr:route>kak-000C.xml</fr:route><fr:title
+text="Maximize Mutual info">Maximize Mutual info</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The infonce objective maximizes mutual info.</fr:p><fr:p><fr:em>Proof</fr:em>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>403</fr:anchor><fr:addr
+type="user">log-0001</fr:addr><fr:route>log-0001.xml</fr:route><fr:title
+text="11-4-2024">11-4-2024</fr:title><fr:authors><fr:author><fr:link
+type="local"
+href="kellenkanarios.xml"
+addr="kellenkanarios"
+title="Kellen Kanarios">Kellen Kanarios</fr:link></fr:author></fr:authors><fr:meta
+name="author">false</fr:meta></fr:frontmatter><fr:mainmatter><fr:p>Hello world! This is my first instantiation of this daily logging thing. Here I will attempt to jot down any questions that come up in my research along with planning my daily activities of the next day. To hold my self accountable, I will log my daily accomplishments and questions.</fr:p><fr:p><fr:strong>Daily Summary:</fr:strong> Today, I focused most of my efforts on the <fr:link
+type="local"
+href="kak-0005.xml"
+addr="kak-0005"
+title="Contrastive Reinforcement Learning">Contrastive Reinforcement Learning</fr:link> blog. I was not able to finish it, but significant progress was made. I think while writing this blog I am finally starting to see how everything comes together. Ultimately, this was more of a logistical day. Since I just instatiated my more structure daily plan, hopefully we can adhere to it tomorrow.</fr:p><fr:p><fr:strong>Tomorrow Todo's:</fr:strong> With the instantiation of the new plan I will allocate my next day's activities a day in advance.</fr:p><fr:ul><fr:li>We will be starting a self-study following <fr:link
+type="local"
+href="richardsutton.xml"
+addr="richardsutton"
+title="Richard Sutton">Richard Sutton</fr:link>'s <fr:link
+type="external"
+href="https://drive.google.com/drive/folders/0B3w765rOKuKANmxNbXdwaE1YU1k?resourcekey=0-JZz-noRuJgogNsg1ljgV8w">CMPUT 609</fr:link> course. For tomorrow, I will go over the review questions and then start with the function approximation section of his textbook.</fr:li>
+  <fr:li>For research, it is long overdue that I contribute to my weak-to-strong generalization project. There are two outstanding objectives:</fr:li>
+  <fr:ul><fr:li>Finite sample analysis,</fr:li>
+    <fr:li>Experiment implementation.</fr:li></fr:ul>
+  I will choose / switch between these.
+  <fr:li>Paper of the week will still be <fr:link
+type="local"
+href="gcrl.xml"
+addr="gcrl"
+title="Constrastive Learning as Goal Conditioned Reinforcement Learning">Constrastive Learning as Goal Conditioned Reinforcement Learning</fr:link>. I will also use this and my extra time to work on the blog post.</fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

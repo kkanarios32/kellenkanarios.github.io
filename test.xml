@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>249</fr:anchor><fr:addr
+type="user">test</fr:addr><fr:route>test.xml</fr:route><fr:title
+text="Jon Sterling">Jon Sterling</fr:title><fr:taxon>Person</fr:taxon><fr:authors /><fr:meta
+name="external">https://www.jonmsterling.com/</fr:meta><fr:meta
+name="institution"><fr:link
+type="external"
+href="ucam">ucam</fr:link></fr:meta><fr:meta
+name="orcid">0000-0002-0585-5564</fr:meta><fr:meta
+name="position">Associate Professor</fr:meta></fr:frontmatter><fr:mainmatter><fr:p>Associate Professor in Logical Foundations and Formal Methods at University of Cambridge. Formerly a <fr:link
+type="external"
+href="jms-0061">Marie Skłodowska-Curie Postdoctoral Fellow</fr:link> hosted at Aarhus University by <fr:link
+type="external"
+href="larsbirkedal">Lars Birkedal</fr:link>, and before this a PhD student of <fr:link
+type="external"
+href="robertharper">Robert Harper</fr:link>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
